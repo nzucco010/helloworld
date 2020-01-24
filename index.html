@@ -1,36 +1,43 @@
 <html>
-<body {background-color: #FCF7F1;}
+
 <head>
-	<style type="text/css">
-		h1 { 
+	<style>
+		{
+			box-sizing: border-box;
+		}
+body
+		{ 
 		color: #D8AAA1;
 		font-family: Arial;
+		padding: 10px;
+		background: #FCF7F1;
 		font-size: 300% }
-	<h1>European Extravaganza</h1>
-</style>
-<style type="text/css">
-</head>
+		.header {
+			padding: : 30px
+			text-align: center;
 
+		}
+	
 div.gallery {
 	display: grid;
-	grid-template-columns: repeat(3,1fr)
+	grid-template-columns: repeat(3,1fr);
 	grid-gap: 5px;
   margin: 50px;
   border: 9px solid #ccc;
   float: center;
-  width: 500px;
+  width: 600px;
 }
 
-div.gallery:hover {
+div:hover {
   border: 1px solid #777;
 }
 
-div.gallery img {
-  width: 100%;
-  height: 600;
+img {
+  width: 600px;
+  height: 600px;
 }
 
-div.desc {
+div {
   padding: 15px;
   text-align: center;
 }
@@ -38,6 +45,8 @@ div.desc {
 </head>
 
 <body>
+
+	<h1>European Extravaganza</h1>
 
 <div class="gallery">
   <a target="_blank" href="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
