@@ -17,21 +17,42 @@ body
 			text-align: center;
 
 		}
-	
+div.wrapper {
+	display: inline-grid;
+	border-style: solid;
+	border-color: #A48D89;
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: repeat(4,1fr);
+	grid-gap: 5px;
+	width: 100vw
+	height: 100vh;
+}
 div.gallery {
 	display: grid;
 	grid-template-columns: repeat(3,1fr);
 	grid-gap: 5px;
   margin: 50px;
   border: 9px solid #ccc;
-  float: center;
+  float: left;
   width: 600px;
-  vertical-align: middle;
+
+}
+
+.responsive {
+	padding: 0 600px; 
+	float: left;
+	width: 25%;
+
+}
+
+@media only screen and (max-width: 500px) {
+	.responsive {
+		width: 100%;
+	}
 }
 
 div.desc {
 	display: inline-grid;
-	grid-template-columns: repeat(3,1fr);
 	font-size: 12;
 	font-family: Arial;
 	margin: 50px;
@@ -58,61 +79,78 @@ div {
 <body>
 
 	<h1>European Extravaganza</h1>
+<div class="wrapper">
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Church" width="600" height="600">
-  </a>
-  <div class="desc">My favorite church in Krakow</div>
+<div class="responsive">	
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Church" width="600" height="600">
+  		</a>
+  		<div class="desc">My favorite church in Krakow</div>
+  	</div>	
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Castle" width="600" height="600">
-  </a>
-  <div class="desc">Wawel Castle built by King Zygmunt I</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Castle" width="600" height="600">
+  		</a>
+  		<div class="desc">Wawel Castle built by King Zygmunt I</div>
+  	</div>	
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandfather" width="600" height="600">
-  </a>
-  <div class="desc">My Dziadek</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    	<img src="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandfather" width="600" height="600">
+  		</a>
+  		<div class="desc">My Dziadek</div>
+  </div>
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandmother" width="600" height="600">
-  </a>
-  <div class="desc">My Babcia</div>
-</div>
-<br>
-<br>
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Friends" width="600" height="600">
-  </a>
-  <div class="desc">Welcome to Southern Spain!</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandmother" width="600" height="600">
+  		</a>
+  		<div class="desc">My Babcia</div>
+  	</div>	
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Granda" width="600" height="600">
-  </a>
-  <div class="desc">View of the Ahlambra</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Friends" width="600" height="600">
+  		</a>
+  		<div class="desc">Welcome to Southern Spain!</div>
+  	</div>	
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewGranada" width="600" height="600">
-  </a>
-  <div class="desc">View of Granada</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Granda" width="600" height="600">
+  		</a>
+  		<div class="desc">View of the Ahlambra</div>
+  	</div>	
 </div>
 
-<div class="gallery">
-  <a target="_blank" href="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    <img src="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewRonda" width="600" height="600">
-  </a>
-  <div class="desc">Can you even believe</div>
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewGranada" width="600" height="600">
+  		</a>
+  		<div class="desc">View of Granada</div>
+  	</div>	
+</div>
+
+<div class="responsive">
+	<div class="gallery">
+  		<a target="_blank" href="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
+    		<img src="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewRonda" width="600" height="600">
+  		</a>
+  		<div class="desc">Can you even believe</div>
+  	</div>	
+  </div>
 </body>
 </html>
