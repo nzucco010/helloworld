@@ -18,7 +18,7 @@ body
 
 		}
 div.wrapper {
-	display: inline-grid;
+	display: block;
 	grid-template-columns: repeat(4,1fr);
 	grid-template-rows: repeat(4,1fr);
 	grid-gap: 5px;
@@ -26,7 +26,6 @@ div.wrapper {
 div.gallery {
 	display: grid;
   margin: 50px;
-  border: 9px solid #ccc;
   float: left;
   width: 600px;
 
@@ -59,11 +58,6 @@ div:hover {
   height: 600px;
 }
 
-img {
-  width: 600px;
-  height: 600px;
-}
-
 div {
   padding: 15px;
   text-align: center;
@@ -81,8 +75,8 @@ div {
 	<div class="responsive">	
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Church" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/krakowchurch.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Church" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">My favorite church in Krakow</div>
   		</div>
@@ -92,8 +86,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Castle" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/krakowcastle.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Castle" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">Wawel Castle built by King Zygmunt I</div>
   			</div>
@@ -103,8 +97,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandfather" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/dziadek.JPG?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Grandfather" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">My Dziadek</div>
   			</div>
@@ -114,8 +108,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Grandmother" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/babcia.JPG?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Grandmother" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">My Babcia</div>
   			</div>
@@ -125,8 +119,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Friends" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/spainadventuresuit.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Friends" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">Welcome to Southern Spain!</div>
   			</div>
@@ -136,8 +130,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="Granda" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/wowgranada.jpg?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="Granda" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">View of the Ahlambra</div>
   			</div>
@@ -147,8 +141,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewGranada" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/granadaview.HEIC?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="ViewGranada" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">View of Granada</div>
   			</div>
@@ -158,8 +152,8 @@ div {
 	<div class="responsive">
 		<div class="gallery">
 			<div class="hover">
-  			<a target="_blank" href="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2">
-    			<img src="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&dpr=2" alt="ViewRonda" width="600" height="600">
+  			<a target="_blank" href="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges">
+    			<img ix-src="https://nicolezucco.imgix.net/wowronda.HEIC?auto=format,compress&h=800&w=800&q=50&fit=crop&crop=faces,edges" alt="ViewRonda" sizes="(min-width: 1024px) 600px, 50vw">
   			</a>
   			<div class="desc">Can you even believe</div>
   		</div>
@@ -169,5 +163,5 @@ div {
 </div>
 
 </body>
-
+<script type="text/javascript" ix-src="https://tom.imgix.net/imgix.js"></script>
 </html>
